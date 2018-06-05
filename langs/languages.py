@@ -14,7 +14,10 @@ to be a virtual assistant with functions of shortcuts and pluguis that made thei
 		}],
 		'ping': [{
 			'usage': '<code>/ping</code> : To check if the bot is online', #ping.py
-}],
+		}],
+		'echo': [{
+			'usage': '<code>/echo [text] : To return text with Markdown or HTML formatting', ## echo.py
+		}]
 	},
 lang_es = {
 		'Error_request':"{user}, Esta solicitud es invalida",
@@ -32,6 +35,9 @@ para ser un asistente virtual con funciones de atajosy pluguis que facilitaron s
 		'ping': [{
 			'usage': '<code>/ping</code> : Para comprobar si el bot está en línea', #ping.py
 }],
+		'echo': [{
+			'usage': '<code>/ping</code> : Para devolver el texto con formato Markdown o HTML.'
+}],
 	},
 lang_pt = {
 		'Error_request':"{user}, Essa solicitação é invalida",
@@ -48,5 +54,8 @@ lang_pt = {
 }],
 		'ping': [{
 			'usage':'<code>/ping</code> : Para verificar se o bot está on', #ping.py
+}],
+		'echo': [{
+			'usage': '<code>/echo</code> : Para retornar o texto com formatação Markdown ou HTML'
 }],
 	}
