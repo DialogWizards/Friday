@@ -9,9 +9,9 @@ def echo(msg, cmd, ln):
 		else:
 			parser = ''
 		try   :sendMessage(chat_id=msg['chat']['id'], text=text, parse_mode=parser, reply_to_message_id=msg['message_id'])
-		except:sendMessage(chat_id=msg['chat']['id'], text='Por favor verifique a formatação e tente novamente.', parse_mode=parser, reply_to_message_id=msg['message_id'])
+		except:sendMessage(chat_id=msg['chat']['id'], text=lang('echo', ln)[0]['parser_error'], parse_mode=parser, reply_to_message_id=msg['message_id'])
 	else:
-		return 'Para obter ajuda sobre este item digite <code>/ajuda echo</code>'
+		return lang('echo', ln)[0]['help']
 plugin = {
 	'patterns': [
 		"^/(echo)",
