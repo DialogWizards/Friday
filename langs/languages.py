@@ -14,7 +14,12 @@ to be a virtual assistant with functions of shortcuts and pluguis that made thei
 		}],
 		'ping': [{
 			'usage': '<code>/ping</code> : To check if the bot is online', #ping.py
-}],
+		}],
+		'echo': [{
+			'usage': '<code>/echo [text] : To return text with Markdown or HTML formatting', ## echo.py
+			'help': 'For help on the command use <code> / help echo </ code>',
+			'parser_error': 'Please check the formatting and try again.',
+		}]
 	},
 lang_es = {
 		'Error_request':"{user}, Esta solicitud es invalida",
@@ -32,6 +37,11 @@ para ser un asistente virtual con funciones de atajosy pluguis que facilitaron s
 		'ping': [{
 			'usage': '<code>/ping</code> : Para comprobar si el bot está en línea', #ping.py
 }],
+		'echo': [{
+			'usage': '<code>/ping</code> : Para devolver el texto con formato Markdown o HTML.', ## echo
+			'help': 'Para obtener ayuda sobre el comando utilise <code> / ayuda echo </ code>',
+			'parser_error': 'Por favor, compruebe el formato y vuelva a intentarlo.',
+}],
 	},
 lang_pt = {
 		'Error_request':"{user}, Essa solicitação é invalida",
@@ -48,5 +58,10 @@ lang_pt = {
 }],
 		'ping': [{
 			'usage':'<code>/ping</code> : Para verificar se o bot está on', #ping.py
+}],
+		'echo': [{
+			'usage': '<code>/echo</code> : Para retornar o texto com formatação Markdown ou HTML', ## echo
+			'help': 'Para obter ajuda sobre o comando utilize <code>/ajuda echo</code>',
+			'parser_error': 'Por favor verifique a formatação e tente novamente.'
 }],
 	}
